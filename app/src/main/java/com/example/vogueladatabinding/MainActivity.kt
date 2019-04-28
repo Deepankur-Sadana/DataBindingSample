@@ -19,11 +19,14 @@ class MainActivity : AppCompatActivity(), MainActivityContract.View {
 
         val mainActivityPresenter = MainActivityPresenter(
             this,
-            getApplicationContext()
+            applicationContext
         )
-        val temperatureData = TemperatureData("Hamburg", "10")
-        binding.setTemp(temperatureData)
-        binding.setPresenter(mainActivityPresenter)
+        val temperatureData = TemperatureData(
+            "Hamburg",
+            "10"
+        )
+        binding.temp = temperatureData
+        binding.presenter = mainActivityPresenter
     }
 
 
