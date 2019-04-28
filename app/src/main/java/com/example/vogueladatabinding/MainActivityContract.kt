@@ -4,6 +4,8 @@ interface MainActivityContract {
 
     interface Presenter {
         fun onShowData(temperatureData: TemperatureData)
+        fun showList()
+
     }
 
     interface View {

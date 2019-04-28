@@ -1,7 +1,7 @@
 package com.example.vogueladatabinding
 
-import android.databinding.BaseObservable;
-import android.databinding.Bindable;
+import android.databinding.BaseObservable
+import android.databinding.Bindable
 
 
 class TemperatureData(private var location: String, private var celsius: String) : BaseObservable() {
